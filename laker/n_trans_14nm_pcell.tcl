@@ -2,7 +2,7 @@
 # what:   14nm sample n transistor
 # params: 	pc length, number of fins, number of gate
 # author:	Ricardo Victor Guiman II
-# comment:	This is a sample tcl pcell only. Make sure you have created a paramCellLib before sourcing this script
+# comment:	This is a sample tcl pcell only. You may need to change layer names, purpose and units. Make sure you have created a paramCellLib before sourcing this script
 #--------------------------------------------------------------------# 
 
 dbDefineParameterizedCell -lib paramCellLib -cell ntrans -params [list [list devLen 0.014 Float] [list pGate 1 Integer] [list pNumFins 1 Integer] ] -vars { cvId xPt yPt rxFinLen rxFinHt rxLen rxHt pcEndCap pcPitch pcHorPitch rxFinPitch ttLen pcLayer tbLayer rxLayer ttLayer rxFinLayer rxFinPurpose addPc xPt2 yPt2 c llx lly urx ury pcBbox endCapBbox ttEx ttBbox addGate horEx verEx rxBbox addRxFin rxFinBbox } \
